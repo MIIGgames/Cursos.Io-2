@@ -1,0 +1,80 @@
+.geral {
+    margin-top: 10px;
+    padding:40px 30px 80px 30px;
+    background-color: rgba(255, 255, 255, 0.559);
+    -webkit-bar-shadow: 0px 0px 5px 0px rgba(148,147,147, 1);
+    -moz-bar-shadow: 0px 0px 5px 0px rgba(148,147,147, 1);
+    box-shadow: 0px 0px 5px 0px rgba(148,147,147, 1);
+    border-radius: 5px;
+}
+
+.duas-tela {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 20px;
+    gap: 20px;
+}
+
+.foto {
+    width: 45%;
+    padding: 10px;
+}
+
+.foto-img {
+    background-color: rgba(169, 169, 169, 0.288);
+    width: auto;
+    padding: 10px;
+}
+
+.foto img {
+    margin-left: 120px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    box-shadow: 2px 3px 3px darkgrey;
+    align-items: center;
+    justify-content: center;
+}
+
+.arquivo {
+    padding: 5px;
+    display: flex;
+    width: auto;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 5px;
+}
+
+.arquivo p {
+    margin-top: 10px;
+}
+
+.arquivo .btn {
+    background-color: rgba(169, 169, 169, 0.297);
+    padding: 10px;
+}
+
+.foto p {
+    color: rgba(0, 0, 0, 0.659);
+    font-size: 14px;
+}
+
+/* Dados */
+
+.dados {
+    margin-left: -550px;
+    display: flex;
+    margin-top: 80px;
+    align-items: center;
+    gap: 20px;
+}
+
+.dados input {
+    border: 1px solid rgba(0, 0, 0, 0.211);
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    width: 250px;
+}
