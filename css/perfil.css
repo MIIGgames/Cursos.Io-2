@@ -27,7 +27,7 @@
 }
 
 .foto img {
-    margin-left: 120px;
+    margin-left: 100px;
     width: 200px;
     height: 200px;
     border-radius: 100%;
@@ -63,18 +63,70 @@
 
 /* Dados */
 
-.dados {
-    margin-left: -550px;
-    display: flex;
-    margin-top: 80px;
-    align-items: center;
-    gap: 20px;
+div.perfil {
+    padding-left: 20px;
+    width: 100%;
+    width: 60%;
+    margin-top: 20px;
 }
 
-.dados input {
-    border: 1px solid rgba(0, 0, 0, 0.211);
-    background-color: #fff;
+.form-group {
+    margin-top: 10px;
+}
+
+div.perfil label {
+    font-size: 14px;
     padding: 5px;
-    border-radius: 5px;
-    width: 250px;
+}
+
+div.perfil input, div.perfil select {
+    font-size: 14px;
+}
+
+div.perfil button {
+    margin-top: 25px;
+}
+
+@media screen and (max-width:800px) {
+    .duas-tela {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .foto {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .foto-img {
+        background-color: #fff;
+    }
+
+    .foto-img img {
+        margin: auto;
+    }
+
+    .arquivo {
+        padding: 5px;
+        display: flex;
+        width: 260px;
+        margin-left: -20px;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        border-radius: 5px;
+    }
+
+    #titolo-abacate {
+        margin-top: 10px;
+        width: 260px;
+    }
+
+    div.perfil {
+        padding-left: 5px;
+        width: 100%;
+        margin-top: 5px;
+    }
+    
 }

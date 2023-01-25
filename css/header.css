@@ -13,6 +13,22 @@
     color: #72777a;
 } 
 
-.flex-dashboard head a > svg {
+.flex-dashboard header svg {
     color: #6e8efb;
+}
+
+.flex-dashboard .fa-bars {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:768px) {
+    .flex-dashboard header a {
+        display: none;
+    }
+
+    .flex-dashboard header {
+        justify-content: flex-end;
+    }
 }

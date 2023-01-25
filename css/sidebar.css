@@ -77,3 +77,25 @@ div.menu ul li a {
 div.menu ul li a:hover {
     color: #fff;
 }
+
+.showbar_logaut {
+    display: none;
+}
+
+.hide {
+    left: -300px;
+}
+
+@media  screen and (max-width:768px) {
+    sidebar {
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 2;
+        transition: .4s;
+    }
+    .showbar_logaut {
+        display: block;
+    }
+}
