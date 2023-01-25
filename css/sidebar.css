@@ -99,3 +99,18 @@ div.menu ul li a:hover {
         display: block;
     }
 }
+
+@media  screen and (max-width:380px) {
+    sidebar {
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 2;
+        transition: .4s;
+        width: 250px;
+    }
+    .showbar_logaut {
+        display: block;
+    }
+}
