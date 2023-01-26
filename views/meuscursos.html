@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../plugins/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../plugins/fontawesome-free-6.2.1-web/css/all.min.css">
+    <title>Cursos.IO | Cadastro</title>
+
+</head>
+<body>
+
+    <div class="flex-dashboard">
+
+        <sidebar id="sidebar">
+            <div class="sidebar-title">
+                <img src="../images/Cursos.Io.png" alt="">
+                <h2>Cursos.Io</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-house-user"></i>
+                        <a href="dashboard.html"> Dashboard</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-user"></i>
+                        <a href="perfil.html"> Perfil</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <a href="vitrine.html"> Vitrine de cursos</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-book"></i> 
+                        <a href="meuscursos.html"> Meus cursos</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-pen"></i> 
+                        <a href="relatorio.html"> Relatórios</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-address-book"></i>
+                        <a href="#"> Falar com um gerente</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-trophy"></i> 
+                        <a href="premiacao.html">Minhas premiações</a>
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-address-card"></i>
+                        <a href="#">Sobre a(o) Cursos.Io</a>
+                    </li>
+                    <li class="showbar_logaut">
+                        <i class="fa-solid fa-right-from-bracket"></i> 
+                        <a href="../index.html">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </sidebar>
+    
+        <main id="mainContent">
+            <header>
+                <i id="iconMenu" onclick="responsiveSidebar()" class="fas fa-bars"></i>
+                <a href="../index.html"> <i class="fa-solid fa-right-from-bracket"></i> Logaute</a>
+            </header>
+            <div class="main-content">
+                <h2>Meus cursos</h2>
+                <div class="meus-cursos">
+
+                    <h5>Sua campanha</h5>
+
+                    <div class="doubo">
+
+                        <div class="painelcursos-1">
+                            <div class="btn-cursos">
+                                <p>Inscritos</p>
+                                <button class="btn">Fazer este curso</button>
+                            </div>
+                            <div class="carrousel">
+                                <div class="container">
+                                    <button class="arrow-left control" aria-label="Previous image">◀</button>
+                                    <button class="arrow-right control" aria-label="Next Image">▶</button>
+                                    <div class="gallery-wrapper">
+                                      <div class="gallery">
+                                        <!--       <div class="item current-item cyan"></div>
+                                        <div class="item deeppink"></div>
+                                        <div class="item turquoise"></div>
+                                        <div class="item darkblue"></div>
+                                        <div class="item purple"></div> -->
+                                        <img src="../images/Design sem nome (27).png" alt="Beach Image" class="item current-item" id="">
+                                        <img src="https://source.unsplash.com/random/250x250/?animal" alt="Animal Image" class="item current-item">
+                                        <img src="https://source.unsplash.com/random/250x250/?street" alt="Street Image" class="item current-item">
+                                        <img src="https://source.unsplash.com/random/250x250/?zoo" alt="Zoo Image" class="item current-item">
+                                        <img src="https://source.unsplash.com/random/250x250/?model" alt="Model Image" class="item current-item">
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+    <script>
+        const controls = document.querySelectorAll(".control");
+        let currentItem = 0;
+        const items = document.querySelectorAll(".item");
+        const maxItems = items.length;
+
+        controls.forEach((control) => {
+        control.addEventListener("click", (e) => {
+            isLeft = e.target.classList.contains("arrow-left");
+
+            if (isLeft) {
+            currentItem -= 1;
+            } else {
+            currentItem += 1;
+            }
+
+            if (currentItem >= maxItems) {
+            currentItem = 0;
+            }
+
+            if (currentItem < 0) {
+            currentItem = maxItems - 1;
+            }
+
+            items.forEach((item) => item.classList.remove("current-item"));
+
+            items[currentItem].scrollIntoView({
+            behavior: "smooth",
+            inline: "center"
+            });
+
+            items[currentItem].classList.add("current-item");
+        });
+        });
+
+    </script>
+    <script src="../plugins/bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
+    <script src="../plugins/fontawesome-free-6.2.1-web/js/all.min.js"></script>
+    <script src="../js/menu.js"></script>
+</body>
+</html>

@@ -33,16 +33,32 @@
     width: 300px;
   }
 
+  .c-card:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
   .c-card__content .txt {
     padding: 10px;
     width: 100%;
   }
 
+  .txt p {
+    font-size: 15px;
+    color: rgba(22, 21, 21, 0.734);
+  }
+
   .txt button {
+    color: #fff;
     padding: 5px;
     border-radius: 5px;
     background: linear-gradient(135deg, #5e17eb, #5e17ebb8);
     border: none;
+  }
+
+  .txt button:hover {
+    transform: scale(1.1);
   }
     
     img {

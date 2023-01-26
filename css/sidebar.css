@@ -17,14 +17,14 @@ sidebar .sidebar-title {
     justify-content: center;
     align-items: center;
     padding: 10px 20px;
-    height: 90px;
+    height: 95px;
     border: 1px solid rgba(0,0,0,.0625);
     border-right: 0px;
 }
 
 sidebar .sidebar-title img {
-    height: 45px;
-    width: 45px;
+    height: 50px;
+    width: 50px;
     border-radius: 100px;
 }
 
