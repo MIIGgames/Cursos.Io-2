@@ -13,15 +13,14 @@
 }
 
   .container {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-gap: 20px;
-    padding: 10px;
+    margin-top: 10px;
   }
 
   .item {
-    padding: 20px;
+    padding: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,6 +44,13 @@
     width: 250px;
     height: 300px;
   }
+
+  .slide h2 {
+    position: absolute;
+    top: 65;
+    right: 35%;
+    text-align: center;
+  }
   
 @media screen and (max-width:768px) {
   .item {
@@ -57,6 +63,6 @@
   .carousel {
     width: auto;
     margin: auto;
-    width: 300px;
+    width: 250px;
   }
 }
