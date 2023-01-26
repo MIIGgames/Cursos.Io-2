@@ -67,83 +67,61 @@
                 <i id="iconMenu" onclick="responsiveSidebar()" class="fas fa-bars"></i>
                 <a href="../index.html"> <i class="fa-solid fa-right-from-bracket"></i> Logaute</a>
             </header>
+
             <div class="main-content">
                 <h2>Meus cursos</h2>
-                <div class="meus-cursos">
 
+                <div class="meus-cursos">
                     <h5>Sua campanha</h5>
 
-                    <div class="doubo">
+                        <div class="container">
+                            <div class="grid">
+                              <div class="item item-1">
 
-                        <div class="painelcursos-1">
-                            <div class="btn-cursos">
-                                <p>Inscritos</p>
-                                <button class="btn">Fazer este curso</button>
-                            </div>
-                            <div class="carrousel">
-                                <div class="container">
-                                    <button class="arrow-left control" aria-label="Previous image">◀</button>
-                                    <button class="arrow-right control" aria-label="Next Image">▶</button>
-                                    <div class="gallery-wrapper">
-                                      <div class="gallery">
-                                        <!--       <div class="item current-item cyan"></div>
-                                        <div class="item deeppink"></div>
-                                        <div class="item turquoise"></div>
-                                        <div class="item darkblue"></div>
-                                        <div class="item purple"></div> -->
-                                        <img src="../images/Design sem nome (27).png" alt="Beach Image" class="item current-item" id="">
-                                        <img src="https://source.unsplash.com/random/250x250/?animal" alt="Animal Image" class="item current-item">
-                                        <img src="https://source.unsplash.com/random/250x250/?street" alt="Street Image" class="item current-item">
-                                        <img src="https://source.unsplash.com/random/250x250/?zoo" alt="Zoo Image" class="item current-item">
-                                        <img src="https://source.unsplash.com/random/250x250/?model" alt="Model Image" class="item current-item">
-                                      </div>
-                                    </div>
+                                <h2>Cursos Inscritos</h2>
+
+                                <div class="carousel">
+
+                                  <div class="slide">
+                                    <img src="../images/Cursos.Io.png" alt="">
                                   </div>
-                            </div>
-                        </div>
 
-                    </div>
-                </div>
+                                  <div class="slide">
+                                    <img src="../images/Cursos.Io.png" alt="">
+                                  </div>
+
+                                  <div class="slide">
+                                    <img src="../images/Design sem nome (27).png" alt="">
+                                  </div>
+
+                                  <div class="slide">
+                                    <img src="../images/Cursos.Io.png" alt="">
+                                  </div>
+                                  
+                                  <div class="slide">
+                                    <img src="../images/Cursos.Io.png" alt="">
+                                  </div>
+
+                                  <div class="slide">
+                                    <img src="../images/Design sem nome (27).png" alt="">
+                                  </div>
+
+                                </div>
+                              </div>
+
+                              <div class="item item-2">
+                                <h2>Cursos Pendentes</h2>
+                                <div class="carousel">
+                                  <div class="slide">Curso 4</div>
+                                  <div class="slide">Curso 5</div>
+                                  <div class="slide">Curso 6</div>
+                                </div>
+                              </div>
+                          </div>
 
             </div>
         </main>
     </div>
-    <script>
-        const controls = document.querySelectorAll(".control");
-        let currentItem = 0;
-        const items = document.querySelectorAll(".item");
-        const maxItems = items.length;
-
-        controls.forEach((control) => {
-        control.addEventListener("click", (e) => {
-            isLeft = e.target.classList.contains("arrow-left");
-
-            if (isLeft) {
-            currentItem -= 1;
-            } else {
-            currentItem += 1;
-            }
-
-            if (currentItem >= maxItems) {
-            currentItem = 0;
-            }
-
-            if (currentItem < 0) {
-            currentItem = maxItems - 1;
-            }
-
-            items.forEach((item) => item.classList.remove("current-item"));
-
-            items[currentItem].scrollIntoView({
-            behavior: "smooth",
-            inline: "center"
-            });
-
-            items[currentItem].classList.add("current-item");
-        });
-        });
-
-    </script>
     <script src="../plugins/bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
     <script src="../plugins/fontawesome-free-6.2.1-web/js/all.min.js"></script>
     <script src="../js/menu.js"></script>
