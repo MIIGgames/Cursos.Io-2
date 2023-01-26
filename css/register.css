@@ -58,3 +58,9 @@
     transform: scale(1.05);
     transition: .2s;
 }
+
+.conta {
+    margin: auto;
+    margin-top: 10px;
+    color: #5e17eb;
+}
