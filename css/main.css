@@ -117,4 +117,17 @@ main .main-content {
         z-index: 1;
         position: relative;
     }
+
+    .dashboard {
+        width: 100%;
+    }
+
+    .panel-2 .divir {
+        align-items: center;
+        justify-content: space-between;
+        width: auto;
+        gap: 50px;
+        display: flex;
+        flex-direction: column;
+    }
 }
