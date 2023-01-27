@@ -131,3 +131,10 @@ main .main-content {
         flex-direction: column;
     }
 }
+
+.cooki {
+    background-color: silver;
+    position: absolute;
+    bottom: auto;
+    top: 85%;
+}
