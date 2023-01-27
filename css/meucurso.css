@@ -63,6 +63,14 @@
   .carousel {
     width: auto;
     margin: auto;
-    width: 250px;
+    width: 340px;
+  }
+}
+
+@media screen and (max-width:580px){
+  .carousel {
+    width: auto;
+    margin: auto;
+    width: 200px;
   }
 }

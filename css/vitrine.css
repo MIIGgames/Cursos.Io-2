@@ -70,3 +70,11 @@
       justify-content: center;
       overflow: hidden;
     }
+
+@media screen and (max-width:768px) {
+  .c-card:hover {
+    transform: none;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+}
