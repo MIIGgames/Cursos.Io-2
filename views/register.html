@@ -30,17 +30,9 @@
                     <label for="age">Idade</label>
                     <input type="email" class="form-control" id="age" placeholder="Idade">
                   </div>
-                  <br>
-                  <div class="form-group">
-                    <label for="email">Genero</label>
-                    <select class="genre" id="genre">
-                        <option>Masculino</option>
-                        <option>Feminino</option>
-                    </select>
-                </div>
                 <br>
                 <div class="form-group">
-                  <label for="email">Email</label>
+                  <label for="email">E-mail</label>
                   <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Digite seu email">
                 </div>
                 <br>
@@ -48,7 +40,11 @@
                   <label for="senha">Senha</label>
                   <input type="password" class="form-control" id="senha" placeholder="senha">
                 </div>
-                <button type="submit" class="btn">Cadastrar</button>
+                <div class="form-group">
+                  <label for="senha">Confirme sua senha</label>
+                  <input type="password" class="form-control" id="senha" placeholder="senha">
+                </div>
+                <button type="button" class="btn">Cadastrar</button>
                 <br>
                 <a class="conta" href="../index.html">Você ja tem uma conta?</a>
               </form>
@@ -58,5 +54,11 @@
 
     <script src="../plugins/bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
     <script src="../plugins/fontawesome-free-6.2.1-web/js/all.min.js"></script>
+    <script>
+      let button = document.querySelector('form button.btn')
+      button.addEventListener('click', () => {
+          location.href = '../pag-assinaturas/index.html'
+      })
+  </script>
 </body>
 </html>
